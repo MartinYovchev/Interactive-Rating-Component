@@ -7,43 +7,38 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- Rating state start -->
+  <div id="rating-state">
+    How did we do?<br>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+    Please let us know how we did with your support request.<br> All feedback is appreciated 
+    to help us improve our offering!<br>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <ul class="button-list">
+      <li><button value="1">1</button></li>
+      <li><button value="2">2</button></li>
+      <li><button value="3">3</button></li>
+      <li><button value="4">4</button></li>
+      <li><button value="5">5</button></li>
+  </ul><br>
+    <button name ="submit">Submit</button>
   </div>
+
+  <div class="hide" id="ending-state">
+    You selected .rating. out of 5.
+
+    Thank you!
+  
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  
+  </div>
+  
+
+  <script src="script.js" charset="utf-8"></script>
 </body>
 </html>
