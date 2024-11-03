@@ -21,3 +21,4 @@ buttons.forEach(button => {
 
 document.getElementById("question").classList.add("fontTextQuestion")
 document.getElementById("text-1").classList.add("fontText-1");
+buttonSubmit.classList.add("submitClass");
